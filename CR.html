@@ -3,19 +3,30 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Календарь</title>
+<title>Календарь</title>	
+
+  <style> 
+   body {
+    background: #EDFFF3; /* цвет фона */
+   }
+   p {												/* создание стиля для названий месяцев */
+	font: bold 105% noto sans, sans-serif;}	
+  </style>
+  
 <style>
 #calendarBig { /* весь календарь */ 
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
   border-spacing: 0 1.5em;
+  
 }
 #calendarBig td {
   vertical-align: top;
 }
 #calendarBig > thead td:not(:nth-child(2)) { /* предыдущий-следующий года */ 
   text-decoration: underline;
+  font-family: monospace; 
   color: rgb(0, 119, 204);
   cursor: pointer;
 }
@@ -23,8 +34,9 @@
   color: #ff3200;
 }
 #calendarBig > thead td:nth-child(2) { /* текущий год */ 
-  font-size: 150%;
-  font-weight: 700;
+  font-size: 125%;
+  font-weight: 120;
+  font-family: monospace;
   color: rgb(140, 61, 2);
 }
 #calendarBig, #calendarBig table {
@@ -43,6 +55,7 @@
 #calendarBig table thead tr:last-child { /* название дней недели */ 
   font-size: small;
   font-weight: 700;
+  font-family: sans-serif; 
   color: rgb(103, 103, 103);
 }
 #calendarBig table tbody td { /* дни */ 
@@ -52,20 +65,7 @@
   color: rgb(231, 140, 92);
 }
 #calendarBig table tbody td.today { /* сегодня */ 
-  outline: 3px solid red;
-}
-#calendarBig table tbody td[title] { /* выделенные даты */ 
-  outline: 3px solid green;
-  background: yellow;
-  cursor: help;
-}
-#calendarBig table tbody td[title] a { /* выделенные даты-ссылки */ 
-  display: block;
-  text-decoration: none;
-}
-#calendarBig table tbody td[title] a:hover { /* выделенные даты-ссылки под курсором */
-  background: #fde910;
-  color: red;
+  outline: 2px solid red;
 }
 </style>
 
@@ -77,21 +77,21 @@
     <td>
       <table data-m="0">
         <thead>
-          <tr><td colspan="7">Январь
+          <tr><td colspan="7"><p>Январь</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="1">
         <thead>
-          <tr><td colspan="7">Февраль
+          <tr><td colspan="7"><p>Февраль</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="2">
         <thead>
-          <tr><td colspan="7">Март
+          <tr><td colspan="7"><p>Март</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
@@ -99,21 +99,21 @@
     <td>
       <table data-m="3">
         <thead>
-          <tr><td colspan="7">Апрель
+          <tr><td colspan="7"><p>Апрель</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="4">
         <thead>
-          <tr><td colspan="7">Май
+          <tr><td colspan="7"><p>Май</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="5">
         <thead>
-          <tr><td colspan="7">Июнь
+          <tr><td colspan="7"><p>Июнь</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
@@ -121,21 +121,21 @@
     <td>
       <table data-m="6">
         <thead>
-          <tr><td colspan="7">Июль
+          <tr><td colspan="7"><p>Июль</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="7">
         <thead>
-          <tr><td colspan="7">Август
+          <tr><td colspan="7"><p>Август</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="8">
         <thead>
-          <tr><td colspan="7">Сентябрь
+          <tr><td colspan="7"><p>Сентябрь</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
@@ -143,27 +143,27 @@
     <td>
       <table data-m="9">
         <thead>
-          <tr><td colspan="7">Октябрь
+          <tr><td colspan="7"><p>Октябрь</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="10">
         <thead>
-          <tr><td colspan="7">Ноябрь
+          <tr><td colspan="7"><p>Ноябрь</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="11">
         <thead>
-          <tr><td colspan="7">Декабрь
+          <tr><td colspan="7"><p>Декабрь</p>
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
 </table>
 <script src="cal.js">
 	</script>
-	<noscript>Извините, требуется включённый Javascript для работы приложения!
+<noscript>Извините, требуется включённый Javascript для работы приложения!
 	</noscript>
 </script>
