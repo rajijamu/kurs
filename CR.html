@@ -12,7 +12,6 @@
    p {												/* создание стиля для названий месяцев */
 	font: bold 105% noto sans, sans-serif;}	
   </style>
-  
 <style>
 #calendarBig { /* весь календарь */ 
   width: 100%;
@@ -59,7 +58,7 @@
   color: rgb(103, 103, 103);
 }
 #calendarBig table tbody td { /* дни */ 
-  color: rgb(44, 86, 122);
+  color: rgb(44, 86, 122);	
 }
 #calendarBig table tbody td:nth-child(n+6), #calendarBig .holiday { /* выходные и праздники */ 
   color: rgb(231, 140, 92);
@@ -68,6 +67,8 @@
   outline: 2px solid red;
 }
 </style>
+
+
 
 <table id="calendarBig">
  <thead>
@@ -162,8 +163,25 @@
         <tbody>
       </table>
 </table>
+
+<script>
+	var q=confirm("Вы в первый раз на сайте?")
+	if (q==true)
+		{
+		alert ('Добро пожаловать!');
+		}
+	else
+		{
+		alert('С возвращением!');
+		}
+	</script>
 <script src="cal.js">
 	</script>
 <noscript>Извините, требуется включённый Javascript для работы приложения!
 	</noscript>
 </script>
+ <body>
+<div  id="content"<p align="center"><details><summary><b>Список всех праздников, отмечаемых в России по месяцам!</b></summary> 
+</div>
+</details>
+ </body>
