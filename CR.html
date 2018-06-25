@@ -22,16 +22,16 @@
 #calendarBig td {
   vertical-align: top;
 }
-#calendarBig > thead td:not(:nth-child(2)) { /* предыдущий-следующий года */ 
+#calendarBig > thead td:not(:nth-child(2)) { /* Предыдущий/следующий года */ 
   text-decoration: underline;
   font-family: monospace; 
   color: rgb(0, 119, 204);
   cursor: pointer;
 }
-#calendarBig > thead td:not(:nth-child(2)):hover { /* если наведён курсор на предыдущий-следующий года */ 
+#calendarBig > thead td:not(:nth-child(2)):hover { /* Если наведён курсор на предыдущий-следующий года */ 
   color: #ff3200;
 }
-#calendarBig > thead td:nth-child(2) { /* текущий год */ 
+#calendarBig > thead td:nth-child(2) { /* Текущий год */ 
   font-size: 125%;
   font-weight: 120;
   font-family: monospace;
@@ -43,25 +43,25 @@
   font-size: 15px;
   text-align: center;
 }
-#calendarBig table { /* таблицы с месяцами выравнены по верхней границе, горизонтально — по центру */ 
+#calendarBig table { /* Таблицы с месяцами выравнены по верхней границе, горизонтально — по центру */ 
   display: inline-table;
 }
-#calendarBig table thead tr:nth-child(1) { /* названия месяцев */ 
+#calendarBig table thead tr:nth-child(1) { /* Названия месяцев */ 
   font: bold 105% noto sans, sans-serif;}	
 }
-#calendarBig table thead tr:last-child { /* название дней недели */ 
+#calendarBig table thead tr:last-child { /* Название дней недели */ 
   font-size: small;
   font-weight: 700;
   font-family: sans-serif; 
   color: rgb(103, 103, 103);
 }
-#calendarBig table tbody td { /* дни */ 
+#calendarBig table tbody td { /* Дни */ 
   color: rgb(44, 86, 122);	
 }
-#calendarBig table tbody td:nth-child(n+6), #calendarBig .holiday { /* выходные и праздники */ 
+#calendarBig table tbody td:nth-child(n+6), #calendarBig .holiday { /* Выходные и праздники */ 
   color: rgb(231, 140, 92);
 }
-#calendarBig table tbody td.today { /* сегодня */ 
+#calendarBig table tbody td.today { /* Сегодня */ 
   outline: 2px solid red;
 }
 </style>
@@ -192,7 +192,7 @@
 <style>
 .imgstyle  {
     width: 200px;	height: 200px; 		/* Размеры */
-    position: relative; left:860px; bottom:0px;
+    position: relative; left:840px; bottom:0px;
     border: 2px solid  #00BFFF; 	/* Внутренняя рамка */
     margin: 20px 0 0px 0; 	/* Отступы */
    }
