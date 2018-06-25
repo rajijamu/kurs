@@ -9,8 +9,6 @@
    body {
     background: #EDFFF3; /* цвет фона */
    }
-   p {												/* создание стиля для названий месяцев */
-	font: bold 105% noto sans, sans-serif;}	
   </style>
 <style>
 #calendarBig { /* весь календарь */ 
@@ -36,7 +34,7 @@
   font-size: 125%;
   font-weight: 120;
   font-family: monospace;
-  color: rgb(140, 61, 2);
+  color: rgb(100, 100, 100);
 }
 #calendarBig, #calendarBig table {
   font: monospace;
@@ -48,8 +46,7 @@
   display: inline-table;
 }
 #calendarBig table thead tr:nth-child(1) { /* названия месяцев */ 
-  font-size: 110%;
-  font-weight: 700;
+  font: bold 105% noto sans, sans-serif;}	
 }
 #calendarBig table thead tr:last-child { /* название дней недели */ 
   font-size: small;
@@ -69,7 +66,19 @@
 </style>
 
 
-
+<body>
+	<div  id="content"<p align="center"><details><summary><b>Праздники:</b></summary>
+		1, 2, 3, 4, 5, 6 и 8 января — Новогодние каникулы;<br>
+		7 января — Рождество Христово;<br>
+		23 февраля — День защитника Отечества;<br>
+		8 марта — Международный женский день;<br>
+		1 мая — Праздник Весны и Труда;<br>
+		9 мая — День Победы;<br>
+		12 июня — День России;<br>
+		4 ноября — День народного единства.<br>
+	</details>
+	</div>
+</body>
 <table id="calendarBig">
  <thead>
   <tr><td><td><td>
@@ -78,21 +87,21 @@
     <td>
       <table data-m="0">
         <thead>
-          <tr><td colspan="7"><p>Январь</p>
+          <tr><td colspan="7">Январь
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="1">
         <thead>
-          <tr><td colspan="7"><p>Февраль</p>
+          <tr><td colspan="7">Февраль
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="2">
         <thead>
-          <tr><td colspan="7"><p>Март</p>
+          <tr><td colspan="7">Март
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
@@ -100,21 +109,21 @@
     <td>
       <table data-m="3">
         <thead>
-          <tr><td colspan="7"><p>Апрель</p>
+          <tr><td colspan="7">Апрель
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="4">
         <thead>
-          <tr><td colspan="7"><p>Май</p>
+          <tr><td colspan="7">Май
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="5">
         <thead>
-          <tr><td colspan="7"><p>Июнь</p>
+          <tr><td colspan="7">Июнь
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
@@ -122,21 +131,21 @@
     <td>
       <table data-m="6">
         <thead>
-          <tr><td colspan="7"><p>Июль</p>
+          <tr><td colspan="7">Июль
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="7">
         <thead>
-          <tr><td colspan="7"><p>Август</p>
+          <tr><td colspan="7">Август
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="8">
         <thead>
-          <tr><td colspan="7"><p>Сентябрь</p>
+          <tr><td colspan="7">Сентябрь
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
@@ -144,21 +153,21 @@
     <td>
       <table data-m="9">
         <thead>
-          <tr><td colspan="7"><p>Октябрь</p>
+          <tr><td colspan="7">Октябрь
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="10">
         <thead>
-          <tr><td colspan="7"><p>Ноябрь</p>
+          <tr><td colspan="7">Ноябрь
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
     <td>
       <table data-m="11">
         <thead>
-          <tr><td colspan="7"><p>Декабрь</p>
+          <tr><td colspan="7">Декабрь
           <tr><td>Пн<td>Вт<td>Ср<td>Чт<td>Пт<td>Сб<td>Вс
         <tbody>
       </table>
@@ -179,9 +188,14 @@
 	</script>
 <noscript>Извините, требуется включённый Javascript для работы приложения!
 	</noscript>
+<style>
+.imgstyle  {
+    width: 200px;	height: 200px; 	/* Размеры */
+    position: relative; left:860px; bottom:0px;
+    border: 2px solid  #00BFFF; /* Внутренняя рамка */
+    margin: 20px 0 0px 0; /* Отступы */
+   }
+</style>
+<img src="http://20cents-video.com/userdata/animated-gif/library/lollolol.gif" title="проверка" class="imgstyle">
+ </body
 </script>
- <body>
-<div  id="content"<p align="center"><details><summary><b>Список всех праздников, отмечаемых в России по месяцам!</b></summary> 
-</div>
-</details>
- </body>
